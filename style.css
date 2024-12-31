@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+ul li {
+  list-style: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+menu ul li {
+  list-style: none;
+  float: left;
+}
+menu ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 3px;
+}
+menu ul li a:hover {
+  background-color: brown;
+  color: white;
+}
+
+/* Hero section  Start*/
+.herosection {
+  background-color: rgb(250, 245, 245);
+  padding: 50px 0px;
+}
+.leftSection p {
+  margin: 20px 0px;
+}
+.leftSection button {
+  padding: 6px 12px;
+  cursor: pointer;
+  border: 1px solid brown;
+}
+.leftSection button:hover {
+  background-color: brown;
+  color: aliceblue;
+}
+.bannerContent {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+.bannerContent .heroImage {
+  width: 60%;
+}
+.bannerContent .heroImage img {
+  width: 100%;
+}
+
+/* Clients Section Start */
+
+.clientSection,
+.powerOfBlockchain {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 50px 0px;
+}
+.clientSection p,
+.powerOfBlockchain p,
+.powerOfBlockchain .sectors p {
+  margin: 10px 0px;
+  color: gray;
+}
+.clientSection .clientLogo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 100px 0px;
+  gap: 40px;
+}
+.clientLogo img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Power of blockchain Section start */
+
+.powerOfBlockchain .sectors {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+.powerOfBlockchain .sectors div {
+  background-color: rgba(232, 220, 220, 0.717);
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+.powerOfBlockchain .sectors img {
+  width: 70px;
+  margin-bottom: 30px;
+}
+/* footer section  */
+.footerContainer {
+  background-color: rgb(28, 6, 48);
+}
+.footerContainer .footer {
+  width: 90%;
+  margin: auto;
+  color: white;
+  padding: 60px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footerContainer .footer h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.footerContainer .footer ul li,
+p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Mobile device  */
+
+@media (max-width: 600px) {
+  .bannerContent {
+    flex-wrap: wrap-reverse;
+    gap: 40px;
+  }
+  .bannerContent .heroImage {
+    width: 100%;
+  }
+  .powerOfBlockchain .sectors {
+    flex-wrap: wrap;
+  }
+}
